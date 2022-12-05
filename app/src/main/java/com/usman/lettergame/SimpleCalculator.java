@@ -58,29 +58,13 @@ public class SimpleCalculator extends AppCompatActivity {
             }
         });
 
-//        subButton.setOnClickListener(new View.OnClickListener() {
-//            @SuppressLint("SetTextI18n")
-//            @Override
-//            public void onClick(View view) {
-//                textView.setText(firstNo - secondNo);
-//            }
-//        });
-//
-//        mulButton.setOnClickListener(new View.OnClickListener() {
-//            @SuppressLint("SetTextI18n")
-//            @Override
-//            public void onClick(View view) {
-//                textView.setText(firstNo * secondNo);
-//            }
-//        });
-//
-//        divButton.setOnClickListener(new View.OnClickListener() {
-//            @SuppressLint("SetTextI18n")
-//            @Override
-//            public void onClick(View view) {
-//                textView.setText(firstNo / secondNo);
-//            }
-//        });
+        subButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                textView.setText(finalFirstNo - finalSecondNo);
+            }
+        });
 
     }
 }
