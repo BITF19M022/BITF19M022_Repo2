@@ -31,6 +31,7 @@ public class Counter extends AppCompatActivity {
             }
         });
 
+        // this is for decreasing number
         decrementButton.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
