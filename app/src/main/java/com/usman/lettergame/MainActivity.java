@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            guessView.setText("Try Again");
+            guessView.setText("Try, Try Again!");
         }
 
     }
