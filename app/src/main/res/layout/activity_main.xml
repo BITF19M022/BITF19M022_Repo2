@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00BCD4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtViewCharacter"
+        android:layout_width="327dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#2196F3"
+        android:text=" "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guess The Letter Game"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewCharacter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#77D0F8"
+        android:text="Sky"
+        app:layout_constraintEnd_toStartOf="@+id/btnGrass"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCharacter" />
+
+    <Button
+        android:id="@+id/btnGrass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#407700"
+        android:text="Grass"
+        app:layout_constraintEnd_toStartOf="@+id/btnRoot"
+        app:layout_constraintStart_toEndOf="@+id/btnSky"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCharacter" />
+
+    <Button
+        android:id="@+id/btnRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#750902"
+        android:text="Root"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGrass"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCharacter" />
+
+    <TextView
+        android:id="@+id/txtViewGuessResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="No Guess"
+        android:textColor="#1403B6"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGrass"
+        app:layout_constraintVertical_bias="0.131" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
